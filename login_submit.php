@@ -10,7 +10,7 @@ include 'common.php';
         ?>
             <script>
                 alert("Incorrect username or Password");
-                location.href="login.php";
+                location.href="signlog.php";
             </script>
         <?php
     }

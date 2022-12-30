@@ -1,7 +1,7 @@
 <?php
 include 'common.php';
 if (!isset($_SESSION['email'])) {
-    header('location: login.php');
+    header('location: signlog.php');
 }
 ?>
 <!DOCTYPE html>

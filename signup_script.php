@@ -5,13 +5,9 @@ if (!$dbc){
     die("Cannot Connect: ". mysqli_connect_error());
 }
 else{
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $name = $fname." ".$lname;
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $contact = $_POST['contact'];
-    $address = $post['address'];
 
     $count = "SELECT * FROM `users`";
     $val = mysqli_query($dbc, $count);
@@ -21,10 +17,10 @@ else{
     $result = mysqli_query($dbc, $sql);
     if(mysqli_num_rows($result)>0){
         echo "Email address already exists.";
-        header('location: signup.php');
+        header('location: signlog.php');
     }
     else{
-        $sq = "INSERT INTO `users`(`uid`, `name`, `email`, `password`, `contact no`, `Address`) VALUES ('$id','$name','$email', '$password', '$contact', '$address')";
+        $sq = "INSERT INTO `users`(`uid`, `name`, `email`, `password`) VALUES ('$id','$name','$email', '$password')";
         $r = mysqli_query($dbc, $sq);
 
         session_start();
