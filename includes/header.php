@@ -15,9 +15,6 @@
             Settings
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="text-align: center;">
-            <li><a class="nav-link active" aria-current="page" href="login.php">Login</a></li>
-            <li><a class="nav-link active" aria-current="page" href="signup.php">Sign Up</a></li>
-            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
             <li><a class="dropdown-item" onclick="confirmBoxUsers()">Delete Account</a></li>
           </ul>
