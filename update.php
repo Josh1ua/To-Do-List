@@ -15,18 +15,19 @@ if (!isset($_SESSION['email'])) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style4.css">
 
-    <title>Add Task</title>
+    <title>Update Task</title>
 </head>
 <body>
     <?php
         include 'includes/header.php';
+        $tid = $_GET['id'];
     ?>
     <div class="logFlex" style="backdrop-filter: blur(5px);">
             <div class="logbody">
                 <div class="card text-dark mb-3">
-                    <div class="card-header" >Add Task</div>
+                    <div class="card-header" >Update Task</div>
                     <div class="card-body">
-                    <form action="addScript.php" method="post">
+                    <form action="updateScript.php?tid=<?php echo $tid ?>" method="post">
                         <div class="mb-3">
                             <label for="Task Name" class="form-label">Task Name</label>
                             <input name="tname" type="text" class="form-control" id="Task name" aria-describedby="text" required>
@@ -51,7 +52,7 @@ if (!isset($_SESSION['email'])) {
                             <textarea name="description" class="form-control" id="description" rows="3" required></textarea>
                         </div>
                         <div style="text-align: right;">
-                            <button type="submit" class="btn btn-secondary">ADD</button>
+                            <button type="submit" class="btn btn-secondary">Update</button>
                         </div>
                     </form>
                     </div>

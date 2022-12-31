@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 body{
     height: 100%;
     width: 100%;
@@ -22,7 +24,7 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #d9534f;
+    background-color: tan;
     color: black;
     text-align: center;
 }
@@ -50,16 +52,14 @@ a:hover {
 }
 
 .grid-container {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     width: 90%;
     display: grid;
     grid-column-gap: 150px;
+    grid-row-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background-color: transparent;
-    /* padding: 10px; */
+    background-color: transparent;  
     justify-items: center;
+    align-items: center;
 }
 .grid-item {
     padding: 30px;
@@ -67,6 +67,8 @@ a:hover {
     text-align: center;
     justify-content: center;
     width: 400px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .but {
@@ -74,5 +76,16 @@ a:hover {
     border: none;
 }
 
+.thead{
+    font-weight: bold;
+    margin: 0;
+}
 
+.cover_container{
+    margin-left: 10%;
+}
 
+.logbody{
+    width: 450px;
+    border-radius: 50px;
+}

@@ -11,17 +11,17 @@
 
 <form action="signup_script.php" method="post">
 	<h1>Create Account</h1>
-	<input type="text" name="name" placeholder="Name">
-	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
+	<input type="text" name="name" placeholder="Name" required>
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
 	<button>SignUp</button>
 </form>
 </div>
 <div class="form-container sign-in-container">
 	<form action="login_submit.php" method="post">
 		<h1>Sign In</h1>
-	<input type="email" name="email" placeholder="Email">
-	<input type="password" name="password" placeholder="Password">
+	<input type="email" name="email" placeholder="Email" required>
+	<input type="password" name="password" placeholder="Password" required>
 	<a href="#">Forgot Your Password</a>
 
 	<button>Sign In</button>

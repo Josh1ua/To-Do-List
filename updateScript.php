@@ -1,6 +1,7 @@
 <?php
 include 'common.php';
 
+$tid = $_GET['tid'];
 $tname = $_POST['tname'];
 $email = $_SESSION['email'];
 $priority = $_POST['priority'];
@@ -10,10 +11,7 @@ $description = $_POST['description'];
 
 $sql="SELECT * FROM `Tasks` WHERE 1";
 $result=mysqli_query($dbc,$sql);
-$id = mysqli_num_rows($result) + 1;
-echo ($id);
-$sql = "INSERT INTO `Tasks`(`taid`, `email`, `Task_Name`, `Date`, `Time`, `Description`, `priority`) VALUES ('$id','$email','$tname','$date','$time','$description', '$priority')";
+$sql = "UPDATE `Tasks` SET `taid`='$tid',`email`='$email',`Task_Name`='$tname',`Date`='$date',`Time`='$time',`Description`='$description',`priority`='$priority' WHERE taid='$tid'";
 mysqli_query($dbc, $sql);
-echo ("ok");
 header('location: index.php');
 ?>
