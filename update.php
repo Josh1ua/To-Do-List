@@ -54,7 +54,7 @@ if (!isset($_SESSION['email'])) {
                         <div style="text-align: right;">
                             <button type="submit" class="btn btn-secondary">Update</button>
                         </div>
-                    </form>
+                    </form> 
                     </div>
                 </div>
             </div>

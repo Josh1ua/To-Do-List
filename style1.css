@@ -18,7 +18,6 @@ body {
     background-size: cover; 
     background-attachment: fixed;
 	font-family: 'Montserrat', sans-serif;
-    backdrop-filter: blur(5px);
 }
 
 h1 {
